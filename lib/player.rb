@@ -2,6 +2,12 @@
 
 # Player
 class Player
+  attr_reader :id
+
+  def initialize(id = nil)
+    @id = id
+  end
+
   def input_position
     loop do
       col = input_troubles
